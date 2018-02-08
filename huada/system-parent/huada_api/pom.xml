@@ -26,6 +26,11 @@
        <artifactId>device_management_interface</artifactId>
        <version>${project.version}</version>
      </dependency>
+	  <dependency>
+		  <groupId>com.huada</groupId>
+		  <artifactId>device_management_impl</artifactId>
+		  <version>${project.version}</version>
+	  </dependency>
    </dependencies>
   <build>
     <finalName>huada_api</finalName>
