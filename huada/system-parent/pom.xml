@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.huada</groupId>
+  <artifactId>system-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>system-parent</name>
+  <url>http://maven.apache.org</url>
+  <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.8.RELEASE</version>
+		<relativePath/>
+  </parent>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<!-- spring-boot 相关 -->
+    	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+  </dependencies>
+  
+  <modules>
+    <!--公共项目  -->
+    <module>common</module>
+    <!--数据仓库项目  -->
+    <module>manager</module>
+    <!--设备管理接口项目  -->
+    <module>device_management_interface</module>
+    <!--设备管理实现项目  -->
+    <module>device_management_impl</module>
+    <!--签名服务接口项目  -->
+    <module>sign_service_interface</module>
+    <!--签名服务实现项目  -->
+    <module>sign_service_impl</module>
+    <!--身份证认证接口项目  -->
+    <module>idcard_service_interface</module>
+    <!--身份证认证实现项目  -->
+    <module>idcard_service_impl</module>
+    <!--实名认证接口项目  -->
+    <module>truename_service_interface</module>
+    <!--实名认证实现项目  -->
+    <module>truename_service_impl</module>
+    <!--第三方服务接口项目  -->
+    <module>outside_service_interface</module>
+    <!--第三方服务实现项目  -->
+    <module>outside_service_impl</module>
+     <!--api  -->
+    <module>huada_api</module>
+  </modules>
+</project>
